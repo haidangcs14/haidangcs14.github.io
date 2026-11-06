@@ -17,24 +17,41 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - run: npm install
-      - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js
+        run: npm run build
+
+      # Không cho GitHub Pages/Jekyll bỏ qua thư mục _next
+      - name: Disable Jekyll
+        run: touch ./out/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: ./out
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - id: deployment
+      - name: Deploy
+        id: deployment
         uses: actions/deploy-pages@v4
