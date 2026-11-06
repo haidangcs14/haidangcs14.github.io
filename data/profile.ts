@@ -65,8 +65,8 @@ export const content: Record<Lang, Content> = {
     location: "Việt Nam",
     siteTitle: "Hai Dang | Software Engineer",
     about: [
-      "Xin chào 👋, mình là Hải Đăng, hiện đang làm Software Engineer. Mình tập trung vào backend, các dự án outsource và xây dựng các dự án liên quan đến giáo dục.",
-      "Trước đó mình làm tại các công ty phần mềm trong và ngoài nước, xây dựng hệ thống giáo dục cho trung tâm học thêm ở Nhật Bản và các dự án STEM, NCKH cho học sinh ở Việt Nam.",
+      "Xin chào 👋, mình là Hải Đăng, hiện đang làm việc với vai trò Software Engineer, tập trung vào Backend Development và phát triển các giải pháp phần mềm. Mình từng làm việc tại các công ty phần mềm trong nước và quốc tế, tham gia phát triển các dự án outsource và xây dựng hệ thống giáo dục cho các trung tâm tại Nhật Bản.",
+      "Bên cạnh phát triển phần mềm, mình còn tham gia triển khai các dự án STEM và nghiên cứu khoa học(NCKH) dành cho học sinh tại Việt Nam, với định hướng ứng dụng lập trình và trí tuệ nhân tạo(AI) vào giáo dục.Mình luôn mong muốn không ngừng phát triển chuyên môn và xây dựng những sản phẩm công nghệ thiết thực, mang lại giá trị cho cộng đồng.",
     ],
 
     experience: [
@@ -129,14 +129,19 @@ export const content: Record<Lang, Content> = {
 
     projects: [
       {
-        title: "Project Alpha",
-        tech: "Python, FastAPI, MongoDB, Docker",
-        org: "Company X",
-        context: "Nền tảng xử lý tài liệu",
+        title: "Học cùng Phao – AI-powered English Learning Platform",
+        tech: "Python, FastAPI, MongoDB, Next.js, TypeScript, Tailwind CSS, Docker, LLM",
+        org: "Personal Project",
+        context:
+          "Nền tảng học tiếng Anh trực tuyến tích hợp AI, hỗ trợ người Việt cải thiện kỹ năng Listening, Speaking, Reading và Writing thông qua các công cụ học tập tương tác.",
         points: [
-          "Thiết kế kiến trúc microservices xử lý hơn 10.000 trang mỗi giờ.",
-          "Xây dựng gateway tập trung để theo dõi chi phí sử dụng API của từng khách hàng.",
-          "Xây dựng hệ thống đánh giá tự động, so sánh chất lượng giữa các bản phát hành.",
+          "Thiết kế và phát triển hệ thống RESTful API bằng FastAPI, tối ưu cấu trúc backend theo modular architecture, cải thiện khả năng bảo trì và mở rộng hệ thống.",
+          "Tích hợp AI Chatbot sử dụng LLM, hỗ trợ giải đáp kiến thức tiếng Anh và tương tác hội thoại, tự động hóa 100% quy trình phản hồi theo yêu cầu người dùng.",
+          "Xây dựng hệ thống AI Speaking Assessment, tự động phân tích và đánh giá bài nói theo các tiêu chí phát âm, độ trôi chảy, ngữ pháp và từ vựng.",
+          "Phát triển AI Writing Assessment, tự động chấm điểm và phản hồi bài viết theo các tiêu chí ngữ pháp, từ vựng, cấu trúc và tính mạch lạc.",
+          "Tự động hóa quy trình đánh giá Speaking và Writing, giảm ước tính 70–80% thời gian đánh giá thủ công.",
+          "Xây dựng hệ thống quản lý từ vựng, Flashcards, Dictionary và IPA, hỗ trợ cá nhân hóa trải nghiệm học tập.",
+          "Container hóa ứng dụng bằng Docker, chuẩn hóa môi trường phát triển và triển khai giữa các môi trường.",
         ],
       },
       {
@@ -167,14 +172,14 @@ export const content: Record<Lang, Content> = {
         category: "Tiếng Anh",
         name: "Aptis General, trình độ B1 (CEFR)",
         issuer: "British Council",
-        year: "2024",
+        year: "2026",
         url: "https://credentials.britishcouncil.org/c724acfb-3ca2-4fa0-bca5-45fb8b701f65?key=6790630b0d2f912bd3b271cd1034cf11c5a27f02c01cba0fdf0dfd43f72319e3#acc.OwmuNkvt",
       },
       {
         category: "AWS",
         name: "AWS Certified Cloud Practitioner",
         issuer: "Amazon Web Services",
-        year: "2023",
+        year: "2025",
       },
       {
         category: "Python",
@@ -201,10 +206,10 @@ export const content: Record<Lang, Content> = {
   en: {
     role: "Software Engineer",
     location: "Vietnam",
-    siteTitle: "Your Name | Software Engineer",
+    siteTitle: "Hai Dang | Software Engineer",
     about: [
-      "Hello 👋, I'm Hai Dang, a Software Engineer specializing in backend development, outsourcing projects, and building education-focused solutions.",
-      "I have previously worked with both domestic and international software companies, contributing to the development of educational systems for tutoring centers in Japan, as well as STEM and scientific research projects for students in Vietnam.",
+      "Hello 👋, I'm Hai Dang, currently working as a Software Engineer with a focus on Backend Development and software solutions. I have experience working at both domestic and international software companies, contributing to outsourcing projects and developing educational systems for learning centers in Japan.",
+      "In addition to software development, I have been involved in STEM and scientific research projects for students in Vietnam, focusing on applying programming and Artificial Intelligence (AI) to education. I am always eager to expand my technical expertise and build practical technology solutions that create meaningful value for the community.",
     ],
     experience: [
       {
@@ -266,13 +271,19 @@ export const content: Record<Lang, Content> = {
     ],
     projects: [
       {
-        title: "Project Alpha",
-        org: "Company X",
-        context: "Document processing platform",
+        title: "Học cùng Phao – AI-Powered English Learning Platform",
+        tech: "Python, FastAPI, MongoDB, Next.js, TypeScript, Tailwind CSS, Docker, LLM",
+        org: "Personal Project",
+        context:
+          "A free AI-powered English learning platform designed for Vietnamese learners, providing interactive tools to improve Listening, Speaking, Reading, and Writing skills.",
         points: [
-          "Designed a microservices architecture processing over 10,000 pages per hour.",
-          "Built a central gateway to track API usage and cost per client.",
-          "Built an automated evaluation system comparing quality across releases.",
+          "Designed and developed RESTful APIs using FastAPI, following a modular backend architecture to improve scalability and maintainability.",
+          "Integrated an LLM-powered AI Chatbot to provide real-time English learning assistance, answer grammar questions, and support interactive conversations.",
+          "Developed an AI-powered Speaking Assessment system to evaluate pronunciation, fluency, grammar, and vocabulary.",
+          "Built an AI-powered Writing Assessment system to automatically score written responses and provide feedback on grammar, vocabulary, sentence structure, and coherence.",
+          "Automated Speaking and Writing assessment workflows, targeting a 70–80% reduction in manual evaluation time.",
+          "Developed interactive learning features, including vocabulary flashcards, an English dictionary, IPA pronunciation guides, and audio playback.",
+          "Containerized the application using Docker to ensure consistent development and deployment environments.",
         ],
       },
       {
@@ -302,14 +313,14 @@ export const content: Record<Lang, Content> = {
         category: "English",
         name: "Aptis General, CEFR level B1",
         issuer: "British Council",
-        year: "2024",
+        year: "2026",
         url: "https://credentials.britishcouncil.org/c724acfb-3ca2-4fa0-bca5-45fb8b701f65?key=6790630b0d2f912bd3b271cd1034cf11c5a27f02c01cba0fdf0dfd43f72319e3#acc.OwmuNkvt",
       },
       {
         category: "AWS",
         name: "AWS Certified Cloud Practitioner",
         issuer: "Amazon Web Services",
-        year: "2023",
+        year: "2025",
       },
       {
         category: "Python",
