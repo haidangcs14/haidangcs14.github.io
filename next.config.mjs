@@ -4,7 +4,8 @@ const nextConfig = {
   output: "export",
   images: { unoptimized: true },
   // Nếu repo KHÔNG phải dạng <username>.github.io thì bỏ comment dòng dưới:
-  // basePath: "/ten-repo",
+  basePath: "/haidangcs14",
+  assetPrefix: "/haidangcs14",
 };
 
 export default nextConfig;
