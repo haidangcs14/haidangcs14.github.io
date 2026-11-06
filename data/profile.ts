@@ -9,7 +9,7 @@ export const common = {
     linkedin: "https://www.linkedin.com/in/haidang-dev",
     cv: "/HaiDang_SE_CV_ENG_v2.pdf",
   },
-  avatar: "/avatar.jpg",
+  avatar: "/avatar.JPG",
   skills: [
     "Python",
     "Docker",
